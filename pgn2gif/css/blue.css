@@ -1,0 +1,18 @@
+/*This will make the whole boaard a bit bluish*/
+.square.light {
+  fill: #dee3e6;
+}
+.square.dark {
+  fill: #8ca2ad;
+}
+
+.square.light.lastmove {
+  fill: #c3d889;
+}
+.square.dark.lastmove {
+  fill: #92b167;
+}
+
+.check {
+  fill: url(#check_gradient);
+}
