@@ -4,7 +4,7 @@ Create GIFs from PGNs
 
 ## Usage
 
-Run `./pgn2gif` with the following options:
+Run `./pgn2gif.py` with the following options:
 
 ```
 Usage: pgn2gif [OPTIONS] COMMAND [ARGS]...
@@ -27,7 +27,7 @@ Commands:
   lichess    Get games played on lichess
 ```
 
-You can also run `./pgn2gif` without any external options and in that case `./pgn2gif` will run on the following default values:
+You can also run `./pgn2gif.py` without any external options and in that case `./pgn2gif.py` will run on the following default values:
 
 ```
 * path          current working directory
@@ -40,31 +40,31 @@ You can also run `./pgn2gif` without any external options and in that case `./pg
 
 ## Examples
 
-* `./pgn2gif`
+* `./pgn2gif.py`
 
 ![alt text](pgn2gif/gifs/sample.gif)
 
-* `./pgn2gif -c blue`
+* `./pgn2gif.py -c blue`
 
 ![alt text](pgn2gif/gifs/sample-1.gif)
 
-* `./pgn2gif  -c green`
+* `./pgn2gif.py  -c green`
 
 ![alt text](pgn2gif/gifs/sample-2.gif)
 
-* `./pgn2gif -p /home/mzfr/dev/mzfr.pgn`
+* `./pgn2gif.py -p /home/mzfr/dev/mzfr.pgn`
 
 ![alt text](pgn2gif/gifs/mzfr.gif)
 
-* `./pgn2gif -p /home/mzfr/dev/mzfr-1.pgn -s 0.2`
+* `./pgn2gif.py -p /home/mzfr/dev/mzfr-1.pgn -s 0.2`
 
 ![alt text](pgn2gif/gifs/mzfr-1.gif)
 
-* `./pgn2gif  -si 600 -s 0.1`
+* `./pgn2gif.py  -si 600 -s 0.1`
 
 ![alt text](pgn2gif/gifs/sample-4.gif)
 
-* `./pgn2gif  -si 680`
+* `./pgn2gif.py  -si 680`
 
 ![alt text](pgn2gif/gifs/sample-3.gif)
 
@@ -73,7 +73,13 @@ You can also run `./pgn2gif` without any external options and in that case `./pg
 
 * You'll need Python3.
 
-* Clone the repository
+Then you can directly install it from pip package:
+
+```bash
+pip install pgn2gif
+```
+
+* or clone the repository
 
 ```
 git clone https://github.com/mzfr/pgn2gif
