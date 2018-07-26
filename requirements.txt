@@ -1,0 +1,5 @@
+imageio
+cairosvg
+requests
+python-chess
+click
