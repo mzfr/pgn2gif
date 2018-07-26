@@ -1,0 +1,4 @@
+include *.txt
+include LICENSE README.md
+recursive-include pgn2gif *.css
+recursive-include pgn2gif *.py
