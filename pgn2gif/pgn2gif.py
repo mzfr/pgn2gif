@@ -6,8 +6,8 @@ import glob
 import click
 from chess import pgn
 
-import download_data
-import handle_gifs
+from . import download_data
+from . import handle_gifs
 
 
 def _handle_pgn(path: str):
