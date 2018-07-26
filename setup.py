@@ -1,27 +1,25 @@
 import os
 import setuptools
 
-
-with open('requirements.txt') as f:
-    requirements = f.read().splitlines()
-
 _ROOT = os.path.abspath(os.path.dirname(__file__))
+
+with open(os.path.join(_ROOT, 'requirements.txt')) as f:
+    requirements = f.read().splitlines()
 
 with open(os.path.join(_ROOT, 'README.md')) as f:
     LONG_DESCRIPTION = f.read()
 
 setuptools.setup(
     name="pgn2gif",
-    version="0.0.1",
+    version="1.0",
     description="Creates GIFs from PGNs",
     long_description=LONG_DESCRIPTION,
     long_description_content_type="text/markdown",
     author="Mehtab Zafar",
     url="https://github.com/mzfr/pgn2gif",
-    download_url="https://github.com/mzfr/pgn2gif/archive/master.zip",
-    packages=setuptools.find_packages(),
+    packages=setuptools.find_packages(exclude=['pgn2gif/gifs']),
     install_requires=requirements,
-    setup_requires=['setuptools>=38.6.0'],
+    entry_points={'console_scripts': ['pgn2gif = pgn2gif:main']},
     keywords='pgn gifs',
     classifiers=[
         "Operating System :: POSIX :: Linux",
